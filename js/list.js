@@ -1,4 +1,3 @@
-
 saveBtn.addEventListener("click", async () => {
     const data = await getApi(input.value);
     if(data!=="Not Found")
@@ -14,7 +13,7 @@ listBtn.addEventListener("click", () => {
     chrome.storage.sync.get({ word_array: [] }, (obj) => {
         for (const word of obj.word_array) {
             const li = document.createElement("li");
-            li.innerText = word.word.toUpperCase();
+            li.innerText = word.word;
             li.setAttribute("style","font-size:smaller")
             const add = () => {
                 const para = document.createElement("small");

@@ -5,11 +5,11 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "fav.png",
+    "default_icon": "./assests/fav.png",
     "default_title" : "dictionary by nik"
   },
   "icons": {
-    "128": "fav.png"
+    "128": "./assests/fav.png"
   },
   "permissions": [
     "storage"
@@ -20,13 +20,13 @@
         "<all_urls>"
       ],
       "js": [
-        "api.js",
-        "save.js",
-        "content.js"
+        "./js/api.js",
+        "./js/save.js",
+        "./js/content.js"
       ]
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "./js/background.js"
   }
 }

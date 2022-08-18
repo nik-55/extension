@@ -7,7 +7,7 @@ const listBtn = document.getElementById("list");
 const bd = document.getElementsByTagName("body")[0];
 
 const img = document.createElement("img");
-img.setAttribute("src", "./loading.gif");
+img.setAttribute("src", "./assests/loading.gif");
 img.setAttribute("style", "margin-left: 40% ; margin-top:15%")
 
 const titleclick = () => {
