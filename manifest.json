@@ -21,6 +21,7 @@
       ],
       "js": [
         "api.js",
+        "save.js",
         "content.js"
       ]
     }
