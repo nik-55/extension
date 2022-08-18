@@ -8,3 +8,6 @@ const KeyPress = async (e) => {
 }
 
 document.onkeydown = KeyPress;
+
+// const paras = document.getElementsByTagName("p");
+// for(const para of paras) para.style.backgroundColor = "yellow";

@@ -5,7 +5,8 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "fav.png"
+    "default_icon": "fav.png",
+    "default_title" : "dictionary by nik"
   },
   "icons": {
     "128": "fav.png"
@@ -23,5 +24,8 @@
         "content.js"
       ]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }

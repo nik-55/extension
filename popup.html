@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
     <title>shabdkosh</title>
 </head>
 <body>
-    <input type="text" id="textInput">
-    <button id="inputBtn">Search</button>
-    <a id="word"></a>
-    <p id="txt"></p>
+    <div id="body">
+    <input type="text" id="textInput" autocomplete="off">
+    <button id="inputBtn" class="fa-solid fa-magnifying-glass"></button>
+    <button id="saveBtn" class="fa-solid fa-bookmark"></button>
+    <button class="fa-solid fa-list" id="list"></button>
+</div>
+<div id="open">
+    <span>Dictionary By nik</span>
+</div>
     <script src="./api.js"></script>
     <script src="./popup.js"></script>
     <script src="./content.js"></script>
