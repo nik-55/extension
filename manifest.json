@@ -1,7 +1,7 @@
 {
-  "name": "shabdkosh",
-  "description": "Easy to use dictionary and save words",
-  "version": "1",
+  "name": "dictionary",
+  "description": "Easy to use dictionary",
+  "version": "1.0.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
