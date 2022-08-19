@@ -1,15 +1,19 @@
 const KeyPress = async (e) => {
     try {
         const evtobj = e;
-        selectedText = document.getSelection();
+        selectedText = document.getSelection().toString();
         const data = await getApi(selectedText);
         if (data !== "Not Found") {
             if (evtobj.ctrlKey && evtobj.keyCode === 90 && evtobj.shiftKey) {
                 alert(data[0].meanings[0].definitions[0].definition);
             }
             else if (evtobj.ctrlKey && evtobj.keyCode === 83 && evtobj.shiftKey) {
-                save(data[0]);
-                alert("saved");
+  
+                const obj = {
+                    word : selectedText,
+                    definition : data[0].meanings[0].definitions[0].definition
+                };
+                save(obj);
             }
         }
     }
